@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CommonViewComponent } from './common-view/common-view.component';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { CommonViewComponent } from './common-view/common-view.component';
     CommonViewComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CKEditorModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

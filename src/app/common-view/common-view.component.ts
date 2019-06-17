@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 @Component({
   selector: 'app-common-view',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./common-view.component.css']
 })
 export class CommonViewComponent implements OnInit {
+
+  public Editor = ClassicEditor;
+  public text = 'Dummy text goes here';
+
 
   constructor() { }
 
